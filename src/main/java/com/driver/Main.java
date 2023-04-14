@@ -1,5 +1,7 @@
 package com.driver;
 
+import java.util.Scanner;
+
 public class Main {
     public static class Product{
 
@@ -21,10 +23,16 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Scanner scn = new Scanner(System.in);
+        int x = scn.nextInt();
+        int y = scn.nextInt();
+        int z = scn.nextInt();
+        double a  = scn.nextDouble();
+        double b = scn.nextDouble();
         Product p = new Product();
-        p.product(10,20);
-        p.product(10,20,30);
-        p.product(1.5,2.5);
+        p.product(x,y);
+        p.product(x,y,z);
+        p.product(a,b);
     }
 
 }
